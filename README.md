@@ -1,24 +1,49 @@
-# Task 1 - Chatbot with Rule-Based Responses
+# Task 2 - Tic-Tac-Toe AI
 
 ## Objective
-To build a simple chatbot that responds to user inputs using predefined rules and if-else statements.
+
+To develop an interactive Tic-Tac-Toe game where a human player competes against an AI opponent.
 
 ## Technologies Used
+
 - Python
-- Conditional Statements
-- String Matching
+- Streamlit
+- Minimax Algorithm
+- Recursion
+- Game Theory
 
 ## Features
-- Responds to greetings
-- Answers simple questions
-- Provides help information
-- Handles unknown inputs
-- Allows the user to exit the conversation
+
+- Human vs AI gameplay
+- Minimax-based AI
+- Easy, Medium and Hard difficulty levels
+- Score tracking
+- Draw detection
+- Win/loss detection
+- New Game option
+- Reset Scores option
+- Interactive web interface
 
 ## How It Works
-The chatbot converts the user's input to lowercase and checks it against predefined rules. Based on the matching rule, it generates an appropriate response.
+
+The player uses X and the AI uses O.
+
+The AI uses the Minimax algorithm to evaluate possible future game states and select the best available move.
+
+The algorithm assigns scores to game outcomes:
+
+- AI win = +1
+- Draw = 0
+- Player win = -1
+
+The AI evaluates possible moves recursively and selects the move with the highest score.
 
 ## How to Run
 
+Install Streamlit:
+
 ```bash
-python chatbot.py
+pip install streamlit
+Task2_TicTacToe/
+├── tic_tac_toe.py
+└── README.md
